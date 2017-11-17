@@ -77,11 +77,12 @@ public class Arquivo {
             model = (DefaultTableModel)tableModel;
         }
         
+        //Verifica tamanho máximo
         String tamanho = String.format("%.1f", (float)this.file.length()/1000);
-
-        Object[] linha = {this.getPath(), tamanho};
-
-        model.addRow(linha);   
+        if(!((float)this.file.length()/1000 > (float)1000000)){
+            Object[] linha = {this.getPath(), tamanho};
+            model.addRow(linha);
+        } 
         
         return model;
     }
