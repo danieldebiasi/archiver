@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Projeto Archiver
+${licensePrefix}ST562 - Estrutura de Arquivos
+${licensePrefix}Professor Dr. Celmar Guimarães da Silva
+<#if licenseLast??>
+${licenseLast}
+</#if>
